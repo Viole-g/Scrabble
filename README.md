@@ -2,12 +2,12 @@
 
 ## Lernziele
 
-Das Arbeiten mit dynamischem Speicher, `enum`s, `struc`s, File I/O und Command Line Arguments.
+Das Arbeiten mit dynamischem Speicher, `enum`s, `struct`s, File I/O und Command Line Arguments.
 
 ## Spezifikation
 
+- Für einen Buchstabenstein – also die Verknüpfung eines Buchstabens mit seinem Wert – ist ein `struct` zu verwenden.
 - Spielfeld und Liste der Buchstabensteine müssen am Heap angelegt werden. Es soll dabei nicht mehr Speicher angefordert werden als notwendig ist.
-- Für die Verknüpfung eines Buchstabensteins mit seinem Wert ist ein Struct zu verwenden.
 - Alle Ausgaben erfolgen auf *stdout*
     - Keinerlei Ausgaben auf *stderr*
 - Das LV-Team stellt ein hilfreiches Framework zur Verfügung (siehe [Framework](#framework)). Dieses Framework darf genutzt aber **nicht verändert** werden!
@@ -15,21 +15,6 @@ Das Arbeiten mit dynamischem Speicher, `enum`s, `struc`s, File I/O und Command L
 - Deadline: 15. Jänner um 23:59 Uhr (in Österreich gültige Zeit)
     - Nachfrist (**mit Punkteabzügen**): 22.Jänner um 23:59 Uhr (in Österreich gültige Zeit)
     - Abzugebende Datei: a3.c
-
-## Bewertung
-
-**Achtung: Für eine positive Beurteilung in der KU muss die Hälfte der öffentlichen Test Cases bestanden werden.**
-Das Assignment wird
-[wie im TeachCenter beschrieben](https://tc.tugraz.at/main/mod/page/view.php?id=55761)
-bewertet. Machen Sie sich auch mit dem [Beurteilungsschema](https://tc.tugraz.at/main/mod/page/view.php?id=55602) für die Übungen vertraut, insbesondere mit den Regeln zu Plagiaten!
-
-## Spezifikation
-
-- Keine zusätzlichen Ausgaben
-- Alle Ausgaben erfolgen auf *stdout*
-   - Keinerlei Ausgaben auf *stderr*
-- **Das vom LV-Team zur Verfügung gestellte Framework darf nicht verändert werden**
-- TODO: Deadline und Nachfrist
 
 ## Bewertung
 
@@ -71,7 +56,7 @@ Jeder Buchstabenstein in der Konfigurationsdatei kann während des Spiels **beli
 
 
 ## Spielfeld
-Die Größe und Inhalt des Spielfeldes ist anhand der Konfigurationsdatei ersichtlich. In ESP-Scrabble ist das Spielfeld immer quadratisch, wobei die kleinstmögliche Größe 4x4 und die größtmögliche Größe 26x26 Felder beträgt. Ein Feld wird in der Konfigurationsdatei mithilfe eines ASCII-Characters dargestellt. `'A'`–`'Z'` stellen dabei die von den Spieler\*innen eingesetzten Buchstaben dar.
+Die Größe und der Inhalt des Spielfeldes sind anhand der Konfigurationsdatei ersichtlich. In ESP-Scrabble ist das Spielfeld immer quadratisch, wobei die kleinstmögliche Größe 4x4 und die größtmögliche Größe 26x26 Felder beträgt. Ein Feld wird in der Konfigurationsdatei mithilfe eines ASCII-Characters dargestellt. `'A'`–`'Z'` stellen dabei die von den Spieler\*innen eingesetzten Buchstaben dar.
 
 > **Wichtig**: Das Spielfeld **muss** bei der Implementierung am Heap gespeichert werden!
 
@@ -202,7 +187,7 @@ Bei unmöglichen Spielzügen wird die Fehlermeldung `Error: Impossible move!\n` 
 
  - Ein neu hinzugefügtes Wort muss mit mindestens einem Wort, das bereits auf dem Spielfeld liegt, verbunden sein (Ausnahme: Erster Spielzug). Zwei Wörter sind verbunden, wenn sie sich zumindest einen Buchstabenstein teilen oder an einem so angrenzen dass das Wort erweitert wird.
 
- - Das neue Wort darf mit bestehenden Wörtern zu keinem Widerspruch führen. Das heißt, dass das Hinlegen eines Wortes keine bereits ausgelegten Buchstaben mit anderen Buchstaben überschreiben darf (außer den gleichen).
+ - Das neue Wort darf mit bestehenden Wörtern zu keinem Widerspruch führen. Das heißt, dass das Hinlegen eines Wortes keine bereits ausgelegten Buchstaben mit anderen Buchstaben überschreiben darf.
 
  >Hinweis: Wenn ein bestehendes Wort an der exakt gleichen Stelle noch einmal eingefügt wird, handelt es sich um einen gültigen Zug, der aber keine Punkte bringt, da keine neuen Buchstaben eingefügt wurden.
  
@@ -393,3 +378,5 @@ Dazu muss `BONUS` **vor** dem `#include` des [framework.h](./framework.h)-Files 
  #include "framework.h"
  ...
 ```
+
+Das oben abgebildete `+` ist dabei nicht Teil des Codes sondern soll nur verdeutlichen, dass die entsprechende Zeile für den Bonus hinzugefügt werden muss.
