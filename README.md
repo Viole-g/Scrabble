@@ -195,7 +195,7 @@ Bei unmöglichen Spielzügen wird die Fehlermeldung `Error: Impossible move!\n` 
  
 ##### Beispiel für einen gültigen Zug
 
-Im ersten Zug wurde das Wort PLAY auf das Spielfeld gelegt.
+Im ersten Zug wurde das Wort PLAY auf das Spielfeld gelegt und in diesem Beispiel sind auch die Buchstaben E und S erlaubt.
 
 ```
  |ABCDEF
@@ -207,18 +207,18 @@ D| PLAY
 E|      
 F|      
 ```
-Dieses kann im zweiten Zug mit `insert B E V pay` um das Wort PAY erweitert werden:
+PLAY kann im zweiten Zug mit `insert B E V esp` um das Wort ESP erweitert werden:
 ```
  |ABCDEF
 --------
 A|      
-B|    P 
-C|    A 
+B| E    
+C| S    
 D| PLAY 
 E|      
 F|      
 ```
- Das Einfügen ist in diesem Fall erlaubt, weil sich das neue Wort PAY einen Buchstaben (`'Y'`) mit dem bereits gelegten Wort PLAY teilt. Für diesen Zug erhält die\*der ziehende Spieler\*in Punkte für die Buchstaben `'P'` und `'A'`. Der letzte Buchstabe des Wortes PAY liefert keine Punkte, weil er bereits auf dem Spielfeld lag.
+ Das Einfügen ist in diesem Fall erlaubt, weil sich das neue Wort ESP einen Buchstaben (`'P'`) mit dem bereits gelegten Wort PLAY teilt. Für diesen Zug erhält die\*der ziehende Spieler\*in Punkte für die Buchstaben `'E'` und `'S'`. Der letzte Buchstabe des Wortes ESP liefert keine Punkte, weil er bereits auf dem Spielfeld lag.
 
 >Hinweis: Da für diese Scrabble-Version keine Verknüpfung mit einem Wörterbuch besteht, überprüft das Programm nicht, ob das eingegebene Wort existiert.
 
