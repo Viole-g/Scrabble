@@ -185,7 +185,7 @@ Bei unmöglichen Spielzügen wird die Fehlermeldung `Error: Impossible move!\n` 
 
  - Die für die Bildung des Wortes nötigen Buchstaben müssen in der Liste erlaubter Buchstaben vorhanden sein (siehe Konfigurationsdatei).
 
- - Ein neu hinzugefügtes Wort muss mit mindestens einem Wort, das bereits auf dem Spielfeld liegt, verbunden sein (Ausnahme: Erster Spielzug). Zwei Wörter sind verbunden, wenn sie sich zumindest einen Buchstabenstein teilen oder an einem so angrenzen dass das Wort erweitert wird.
+ - Ein neu hinzugefügtes Wort muss mit mindestens einem Wort, das bereits auf dem Spielfeld liegt, verbunden sein (Ausnahme: Erster Spielzug). Zwei Wörter sind verbunden, wenn sie sich zumindest einen Buchstabenstein teilen.
 
  - Das neue Wort darf mit bestehenden Wörtern zu keinem Widerspruch führen. Das heißt, dass das Hinlegen eines Wortes keine bereits ausgelegten Buchstaben mit anderen Buchstaben überschreiben darf.
 
@@ -252,7 +252,7 @@ Das Programm soll im Verlauf des Spiels auf Fehler mit entsprechenden Fehlermeld
 | Wert | Fehlermeldung                              | Bedeutung                                                      |
 | ---- | ------------------------------------------ | -------------------------------------------------------------- |
 | 0    |                                            | Erfolgsfall                                                    |
-| 1    | `Usage: ./a3 configfile\n`                | Falsche Anzahl von Kommandozeilenparametern                    |
+| 1    | `Usage: ./a3 configfile\n`                 | Falsche Anzahl von Kommandozeilenparametern                    |
 | 2    | `Error: Cannot open file: <CONFIG_FILE>\n` | Konfigurationsdatei kann nicht geöffnet werden                 |
 | 3    | `Error: Invalid file: <CONFIG_FILE>\n`     | Konfigurationsdatei beginnt nicht mit korrekter *Magic-Number* |
 | 4    | `Error: Out of memory\n`                   | Kein Speicher kann mehr angefordert werden                     |
@@ -313,9 +313,9 @@ M|
 N|               
 O|               
 
-Player 2 > insert h c v ELEGRAM
+Player 2 > insert g c v TELEGRAM
 Error: Impossible move!
-Player 2 > insert h c v ALL
+Player 2 > insert g c v TALL
 
 A1, B1, D2, E1, F2, I1, K2, L2, Q3, 
 S2, T2, U1
