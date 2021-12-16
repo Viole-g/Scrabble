@@ -190,6 +190,8 @@ Bei unmöglichen Spielzügen wird die Fehlermeldung `Error: Impossible move!\n` 
  - Das neue Wort darf mit bestehenden Wörtern zu keinem Widerspruch führen. Das heißt, dass das Hinlegen eines Wortes keine bereits ausgelegten Buchstaben mit anderen Buchstaben überschreiben darf.
 
  >Hinweis: Wenn ein bestehendes Wort an der exakt gleichen Stelle noch einmal eingefügt wird, handelt es sich um einen gültigen Zug, der aber keine Punkte bringt, da keine neuen Buchstaben eingefügt wurden.
+
+ >Hinweis: Wenn das Spielfeld in einem Config-File bereits ausgelegte Wörter enthält, so müssen diese _nicht_ verbunden sein. Sie können annehmen, dass in solchen Config-Files zumindest ein\*e Spieler\*in bereits Punkte hat. Da bereits ein\*e Spieler\*in über Punkte verfügt, gilt der erste Zug als vergangen. Somit müssen in diesem Fall _alle_ neu hinzugefügten Wörter – also auch das erste nach dem Laden der Config-Datei – mit (zumindest) einem bestehenden Wort verbunden sein.
  
 ##### Beispiel für einen gültigen Zug
 
