@@ -36,7 +36,7 @@ Die Reihenfolge der einzelnen Teile der Konfigurationsdatei wird durch folgende 
 | ----------------------------------------------------------------------- |
 | *Magic-Number* (Muss der ASCII-Text "Scrabble" sein)                    |
 | Spielfeld (Quadrat aus den Zeichen `'A'`-`'Z'` und `' '`)                 |
-| Spieler\*in 1 oder 2 an der Reihe (`'0'`: Spieler\*in 1, `'1'`: Spieler\*in 2)  |
+| Spieler\*in 1 oder 2 an der Reihe (`'1'`: Spieler\*in 1, `'2'`: Spieler\*in 2)  |
 | Spielstand Spieler\*in 1 (Zahl in Dezimalschreibweise)                          |
 | Spielstand Spieler\*in 2 (Zahl in Dezimalschreibweise)                          |
 | Auflistung verwendbarer Buchstabensteine (Details unter [Buchstabenstein](#buchstabenstein))|
