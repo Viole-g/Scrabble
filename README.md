@@ -343,7 +343,7 @@ Player 1 >
 
 ```
 
-Die Liste verfügbarer Buchstabensteine und deren Werte werden dabei groß geschrieben, alphabetisch sortiert und von links nach rechts ausgegeben mit maximal neun Buchstabensteinen pro Reihe. (Beachten Sie die leere Zeile vor Ausgabe der Liste und das Leerzeichen nach den Kommas)
+Die verfügbaren Buchstabensteine werden in der Reihenfolge ausgegeben, in der sie auch in der Konfigurationsdatei angegeben sind. Pro Zeile werden dabei bis zu neun Buchstabensteine ausgegeben, wobei der entsprechende Buchstabe groß geschrieben ist. (Beachten Sie die leere Zeile vor Ausgabe der Liste und das Leerzeichen nach den Kommas!)
 
 ### Wertung
 
