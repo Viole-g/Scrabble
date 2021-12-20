@@ -20,8 +20,9 @@ reset:			## resets the config files
 
 bin:                  ## compiles project to executable binary
 	@echo "[\033[36mINFO\033[0m] Compiling binary..."
-	$(CC) $(CCFLAGS) -o $(ASSIGNMENT) $(ASSIGNMENT).c framework.c
+	$(CC) $(CCFLAGS) -o $(ASSIGNMENT) $(ASSIGNMENT).c 
 	chmod +x $(ASSIGNMENT)
+	chmod +x testrunner
 
 all: clean reset bin        ## all of the above
 
@@ -31,7 +32,7 @@ run: all              ## runs the project
 
 test: all             ## runs public testcases on the project
 	@echo "[\033[36mINFO\033[0m] Executing testrunner..."
-	./testrunner -c test_all.toml
+	./testrunner -c test.toml
 
 help:                 ## prints the help text
 	@echo "Usage: make \033[36m<TARGET>\033[0m"
