@@ -32,7 +32,7 @@ run: all              ## runs the project
 
 test: all             ## runs public testcases on the project
 	@echo "[\033[36mINFO\033[0m] Executing testrunner..."
-	./testrunner -c test.toml
+	./testrunner -c test.toml -b
 
 help:                 ## prints the help text
 	@echo "Usage: make \033[36m<TARGET>\033[0m"
